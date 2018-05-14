@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationPath" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NuF-Hr-QDk">
+                                <rect key="frame" x="34" y="234" width="306" height="201"/>
+                                <color key="backgroundColor" red="0.68740085659898476" green="0.68740085659898476" blue="0.68740085659898476" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sft-yI-faK">
+                                <rect key="frame" x="34" y="154" width="341" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="UtA-CJ-ew3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwF-er-Lev">
+                                <rect key="frame" x="34" y="470" width="341" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="zhS-Iu-hKc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NuF-Hr-QDk" secondAttribute="bottom" constant="232" id="Bid-qq-ie6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NuF-Hr-QDk" secondAttribute="trailing" constant="35" id="OqC-lP-Sk0"/>
+                            <constraint firstItem="KwF-er-Lev" firstAttribute="top" secondItem="NuF-Hr-QDk" secondAttribute="bottom" constant="35" id="Xbj-pW-4jy"/>
+                            <constraint firstItem="KwF-er-Lev" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="b7g-0o-ZaM"/>
+                            <constraint firstItem="sft-yI-faK" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-34" id="dya-hc-dHb"/>
+                            <constraint firstItem="NuF-Hr-QDk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="lIE-J2-Iiq"/>
+                            <constraint firstItem="sft-yI-faK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="tOo-0q-RgC"/>
+                            <constraint firstItem="NuF-Hr-QDk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="214" id="vHc-CI-nVY"/>
+                            <constraint firstItem="KwF-er-Lev" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-34" id="wdw-4M-OxU"/>
+                            <constraint firstItem="NuF-Hr-QDk" firstAttribute="top" secondItem="sft-yI-faK" secondAttribute="bottom" constant="35" id="zJ9-US-7AA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstLabel" destination="sft-yI-faK" id="9wk-Bz-BQ6"/>
+                        <outlet property="secondLabel" destination="KwF-er-Lev" id="NJS-w1-OrH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
